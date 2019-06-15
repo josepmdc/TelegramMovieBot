@@ -3,6 +3,8 @@ This is a Telegram bot made with Flask for getting movie links from Putlocker.
 It uses web scraping to search for links in the Putlocker website and then send them through the Telegram Webhook API.
 In order to connect to the webhook it uses ngrok to expose the localhost, but you can use your own domain and hosting if you wish.
 
+![Demo Gif](https://github.com/josepmdc/TelegramMovieBot/blob/master/MovieBot.gif)
+
 # How to use
 Go to Telegram and search for the Botfather bot on the search bar. Once you found it follow the 
 instructions to create a new bot.
