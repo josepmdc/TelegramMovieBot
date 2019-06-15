@@ -6,12 +6,18 @@ In order to connect to the webhook it uses ngrok to expose the localhost, but yo
 ![Demo Gif](https://github.com/josepmdc/TelegramMovieBot/blob/master/MovieBot.gif)
 
 # How to use
-Go to Telegram and search for the Botfather bot on the search bar. Once you found it follow the 
+First of all you have to create a virtual enviroment and install all the pip packages. To do that use the following commands on the project directory:
+```
+$ python -m venv venv
+$ source venv/bin/activate      (If you are on Windows use this command instead: venv\Scripts\activate)
+$ pip install -r requirements.txt
+```
+Go to Telegram and search for the Botfather bot on the search bar. Once you find it follow the 
 instructions to create a new bot.
 
-Botfather will give you a token. Copy that token and copy it in the config.py file on the TOKEN variable.
+Botfather will give you a token. Copy that token and paste it in the config.py file on the TOKEN variable.
 
-Download ngrok and start it on port 5000(It has to be the same port we will have our flask server) with 'ngrok http 5000'. Then copy the https url that it displays on the console.
+Download ngrok and start it on port 5000 (It has to be the same port we will have our flask server) with ```ngrok http 5000```. Then copy the https url that it displays on the console. It will be something like this: https://7l2f7c9b.ngrok.io
 It is important that you use the https url since Telegram doesn't accept http for security reasons. 
 
 Once everything is set up you can start the falsk server and test your bot. Send a message with the movie title and wait for the response with all the links.
