@@ -20,4 +20,4 @@ Botfather will give you a token. Copy that token and paste it in the config.py f
 Download ngrok and start it on port 5000 (It has to be the same port we will have our flask server) with ```ngrok http 5000```. Then copy the https url that it displays on the console. It will be something like this: https://7l2f7c9b.ngrok.io
 It is important that you use the https url since Telegram doesn't accept http for security reasons. 
 
-Once everything is set up you can start the falsk server and test your bot. Send a message with the movie title and wait for the response with all the links.
+Once everything is set up you can start the falsk server with ```flask run``` and test your bot. Send a message with the movie title and wait for the response with all the links.
